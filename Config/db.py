@@ -1,9 +1,10 @@
 from pymongo import MongoClient
+import os
+from dotenv import load_dotenv
 
-#  MongoDB URI
-MONGO_URI = 'mongodb+srv://vsarthak62:zC6FwnlEuJQOeX6R@cluster0.p3azv.mongodb.net/cosmocloud?retryWrites=true&w=majority'
+load_dotenv()
 
 # Establishing Connection
-conn = MongoClient(MONGO_URI)
+conn = MongoClient(os.getenv('MONGO_URI'))
 
 db = conn['cosmocloud'] # Database selected
