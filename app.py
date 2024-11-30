@@ -10,7 +10,12 @@ app.include_router(routes, prefix="/api", tags=["Students"])
 
 @app.get('/')
 async def root():
-    return {"message": "Welcome to the API"}
+    return {"message": "Welcome to the Student API Calls"}
+
+@app.get('/api')
+async def root():
+    return {"message": "Welcome to the Student API Calls"}
+
 
 if __name__ == "__main__":
     
