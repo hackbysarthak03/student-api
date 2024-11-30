@@ -11,7 +11,7 @@ API Calls using:
 
 
 ## API Routes Guide: Read before you begin!
-```http
+```bash
   BASE URL: https://student-api-fus8.onrender.com
 ```
 
